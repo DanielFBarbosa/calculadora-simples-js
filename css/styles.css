@@ -14,7 +14,7 @@
 
 .calculadora{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.685);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -45,5 +45,21 @@
     font-size: 25px;
     color: black;
     text-align: right;
-    overflow-wrap: break-word;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/*barra de rolagem*/
+::-webkit-scrollbar{
+    height: 3px;
+}
+
+/*Trilha (barra de progresso) da barra de rolagem*/
+::-webkit-scrollbar-track{
+    background-color: rgba(84, 88, 94, 0.089);
+}
+
+/*Alça de rolagem arrastável*/
+::-webkit-scrollbar-thumb{
+    background-color: rgb(18, 24, 121);
 }
